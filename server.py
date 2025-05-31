@@ -7,11 +7,13 @@ from aiogram import Bot, Dispatcher, executor, types
 
 import exceptions
 import expenses
-import misc
+
 from categories import Categories
 from middlewares import AccessMiddleware
 
-token = misc.token
+
+
+token = os.getenv('TG_TOKEN')
 
 logging.basicConfig(level=logging.INFO)
 
